@@ -1,0 +1,25 @@
+
+.background{
+    background-image: url('./images/man-in-black-shirt-sits-behind-desk-with-computers-2102416\ \(1\).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+    overflow-y: hidden;
+}
+
+.overlay{
+    background-color: rgba(0,0,0, 0.7);
+    height: 800px;
+}
+.jumbotron{
+    background-color: transparent;
+    
+}
+.piper{
+    margin-top: 150px;
+}
+@media (min-width: 768px){
+    .container{
+        width: 60%;
+    }
+}
