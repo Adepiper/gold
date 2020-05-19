@@ -1,25 +1,61 @@
-
-.background{
-    background-image: url('./images/man-in-black-shirt-sits-behind-desk-with-computers-2102416\ \(1\).jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
-    overflow-y: hidden;
+.homePage {
+  background-image: url('./images/silver-and-black-solar-panels-on-snow-covered-ground-159160.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  background-position: center center;
 }
 
-.overlay{
-    background-color: rgba(0,0,0, 0.7);
-    height: 800px;
+.homePage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
 }
-.jumbotron{
-    background-color: transparent;
-    
+
+.homePage * {
+  z-index: 1;
 }
-.piper{
-    margin-top: 150px;
+
+.homePage hr {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 2px solid white;
+  opacity: 0.7;
+  border-radius: 25px;
 }
-@media (min-width: 768px){
-    .container{
-        width: 60%;
-    }
+
+.buttons {
+  margin-top: 40px;
+}
+.buttons a {
+  width: 200px;
+  padding: 10px;
+  border: 3px solid #db7806da !important ;
+  font-weight: bold;
+  transition: 0.3s;
+  color: white;
+}
+.buttons a:hover {
+  background-color: #db7806da !important;
+  color: white;
+  width: 220px;
+}
+
+@media (min-width: 969px) {
+  .buttons {
+    margin: 0 150px;
+  }
 }
