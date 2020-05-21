@@ -38,21 +38,13 @@
   padding: 30px;
   line-height: 2em;
   font-size: 24px;
+  animation: pageLoad ease-in 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 .homePage * {
   z-index: 1;
-}
-
-.homePage hr {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  border: 2px solid white;
-  opacity: 0.7;
-  border-radius: 25px;
 }
 
 .buttons {
@@ -79,10 +71,46 @@
   border-bottom: 3px solid #db7806da !important ;
 }
 
+.services .narrow .heading {
+  font-size: 40px !important;
+}
+
+.services .narrow hr {
+  width: 20%;
+  margin: 10px auto 30px auto;
+  border: 2px solid #db7806da;
+  opacity: 0.7;
+  border-radius: 25px;
+}
+
+.services .service {
+  padding: 20px;
+  box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+.services .service h3 {
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.services .row {
+  animation: pageLoad ease-in 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.services .service .lead {
+  line-height: 2.5rem;
+}
+
 @media (max-width: 600px) {
   .homePage .icons img {
     height: 200px;
     width: 200px;
+  }
+
+  .services .narrow hr {
+    width: 60%;
   }
 }
 
@@ -94,5 +122,14 @@
     position: absolute;
     top: 25%;
     margin: 20px;
+  }
+}
+
+@keyframes pageLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
