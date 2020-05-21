@@ -1,15 +1,11 @@
 .homePage {
-  background-image: url('./images/silver-and-black-solar-panels-on-snow-covered-ground-159160.jpg');
+  background-image: url('./images/top-view-of-desert-2265082.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: #ffffff;
-  overflow: hidden;
   background-position: center center;
+  overflow-x: hidden;
 }
 
 .homePage::after {
@@ -20,6 +16,28 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.homePage .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.homePage .icons img {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  margin-top: 50px;
+  box-shadow: 10px 20px 10px 10px rgba(0, 0, 0, 0.9);
+}
+
+.homePage .icons p {
+  margin: 10px;
+  padding: 30px;
+  line-height: 2em;
+  font-size: 24px;
 }
 
 .homePage * {
@@ -40,22 +58,41 @@
 .buttons {
   margin-top: 40px;
 }
-.buttons a {
-  width: 200px;
-  padding: 10px;
-  border: 3px solid #db7806da !important ;
+.homePage .icons a {
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px !important;
+  border: 1px solid #db7806da !important ;
   font-weight: bold;
-  transition: 0.3s;
+  transition: 0.5s;
   color: white;
+  margin: 10px;
 }
-.buttons a:hover {
+.homePage .icons a:hover {
   background-color: #db7806da !important;
   color: white;
-  width: 220px;
+  text-decoration: none;
 }
 
-@media (min-width: 969px) {
-  .buttons {
-    margin: 0 150px;
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  border-bottom: 3px solid #db7806da !important ;
+}
+
+@media (max-width: 600px) {
+  .homePage .icons img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (min-width: 750px) {
+  .homePage {
+    position: relative;
+  }
+  .homePage .icons {
+    position: absolute;
+    top: 25%;
+    margin: 20px;
   }
 }
