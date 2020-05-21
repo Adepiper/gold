@@ -33,28 +33,8 @@ export class Home extends Component {
     });
   };
 
-  ResumeUi = () => {
-    const cardsEl = document.querySelectorAll('.carder');
-    const next = document.getElementById('next');
-    const prev = document.getElementById('prev');
-    let activeCard = 0;
-
-    next.addEventListener('click', getNextCard.bind(null, cardsEl, activeCard));
-
-    prev.addEventListener(
-      'click',
-      getPreviousCard.bind(null, cardsEl, activeCard)
-    );
-    singleCard(cardsEl, activeCard);
-    updateCurrentText(cardsEl, activeCard);
-  };
-
-  componentDidUpdate() {
-    this.ResumeUi();
-  }
   componentDidMount() {
     this.jQuery();
-    this.ResumeUi();
   }
 
   render() {
@@ -83,44 +63,6 @@ export class Home extends Component {
       </>
     );
   }
-}
-
-function singleCard(cards, activeCard) {
-  cards.forEach((card, index) => {
-    if (index === 0) {
-      card.classList.add('active');
-    }
-    updateCurrentText(cards, activeCard);
-  });
-}
-
-const getNextCard = (card, activeCard) => {
-  card[activeCard].className = 'carder left';
-  activeCard = activeCard + 1;
-
-  if (activeCard > card.length - 1) {
-    activeCard = card.length - 1;
-  }
-
-  card[activeCard].className = 'carder active';
-
-  updateCurrentText(card, activeCard);
-};
-
-function getPreviousCard(card, activeCard) {
-  card[activeCard].className = 'carder right';
-  activeCard = activeCard - 1;
-  if (activeCard < 0) {
-    activeCard = 0;
-  }
-
-  card[activeCard].className = 'carder active';
-  updateCurrentText(card, activeCard);
-}
-function updateCurrentText(card, activeCard) {
-  const currentEl = document.getElementById('current');
-
-  currentEl.innerText = `${activeCard + 1}/${card.length}`;
 }
 
 export default Home;
