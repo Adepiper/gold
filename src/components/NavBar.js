@@ -6,7 +6,7 @@ export default function NavBar() {
     <div>
       <nav className='navbar navbar-expand-md navbar-dark bg-dark px-0'>
         <Link to='/' className='navbar-brand mx-3 font-weight-bold'>
-          Oluwapelumi Gold
+          <img src='' alt='' srcset='' />
         </Link>
 
         <button

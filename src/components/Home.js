@@ -1,12 +1,12 @@
 /* global $ */
 
 import React, { Component } from 'react';
-import './Home.css';
 import Gold from '../images/Gold.jpg';
 import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import Resume from './Resume';
 import Services from './Services';
+import Skillset from './Skillset';
 
 export class Home extends Component {
   jQuery = () => {
@@ -60,6 +60,7 @@ export class Home extends Component {
         <NavBar />
         <Services />
         <Resume />
+        <Skillset />
       </>
     );
   }

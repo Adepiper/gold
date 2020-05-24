@@ -1,4 +1,5 @@
 .homePage {
+  position: relative;
   background-image: url('./images/top-view-of-desert-2265082.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,6 +7,7 @@
   color: #ffffff;
   background-position: center center;
   overflow-x: hidden;
+  background-attachment: fixed;
   /* background-color: linear-gradient(rgba(0, 0, 0, 0.7)); */
 }
 
@@ -17,6 +19,11 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.homePage *,
+.skillset * {
+  z-index: 1;
 }
 
 .homePage .icons {
@@ -42,10 +49,6 @@
   animation: pageLoad ease-in 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-}
-
-.homePage * {
-  z-index: 1;
 }
 
 .buttons {
@@ -80,7 +83,7 @@
   width: 20%;
   margin: 10px auto 30px auto;
   border: 2px solid #db7806da;
-  opacity: 0.7;
+
   border-radius: 25px;
 }
 
@@ -118,7 +121,6 @@
   width: 25%;
   margin: 10px auto 30px auto;
   border: 2px solid #db7806da;
-  opacity: 0.7;
   border-radius: 25px;
 }
 
@@ -175,6 +177,51 @@
 }
 .resume .card-container .cards:hover .card-back {
   display: block;
+}
+
+#skillset {
+  background-image: url('./images/man-in-black-shirt-sits-behind-desk-with-computers-2102416\ \(1\).jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 600px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#skillset::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#skillset * {
+  z-index: 1;
+}
+
+.skillset hr {
+  width: 20%;
+  margin: 10px auto 30px auto;
+  border: 2px solid #db7806da;
+  opacity: 1;
+  border-radius: 25px;
+}
+
+.skillset img {
+  height: 150px;
+  width: 150px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 50%;
 }
 
 @media (max-width: 600px) {

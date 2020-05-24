@@ -7,3 +7,7 @@ body {
   box-sizing: border-box;
   background-color: lightgray;
 }
+
+body * {
+  z-index: 1;
+}
