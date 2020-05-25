@@ -224,6 +224,69 @@
   border-radius: 50%;
 }
 
+.contact {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #db7806da;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.contact h4 {
+  font-size: 23px;
+  padding: 10px;
+  margin: 10px;
+  letter-spacing: 5px;
+}
+
+.contact img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.contact .phonemail {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.contact .phonemail a {
+  color: #db7806da;
+  text-decoration: none;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+
+.contact .phonemail a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.contact .phonemail a i {
+  padding: 10px 10px 0 10px;
+  font-size: 30px;
+}
+
+.contact .socialMedia button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #db7806da;
+  transition: 0.3s;
+}
+
+.contact .socialMedia button i {
+  font-size: 25px;
+}
+
+.contact .socialMedia button:hover {
+  color: white;
+  background-color: #db7806da;
+}
+
 @media (max-width: 600px) {
   .homePage .icons img {
     height: 200px;

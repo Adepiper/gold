@@ -3,9 +3,6 @@ import './App.css';
 import { Route } from 'react-router-dom';
 import Home from './components/Home';
 
-import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
-
 function App() {
   return (
     <div className='App'>
@@ -18,10 +15,6 @@ function App() {
           </React.Fragment>
         )}
       ></Route>
-
-      <Route path='/Contact' component={Contact} />
-
-      <Route path='/portfolio' component={Portfolio} />
     </div>
   );
 }

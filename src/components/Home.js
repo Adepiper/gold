@@ -7,6 +7,7 @@ import NavBar from './NavBar';
 import Resume from './Resume';
 import Services from './Services';
 import Skillset from './Skillset';
+import Contact from './Contact';
 
 export class Home extends Component {
   jQuery = () => {
@@ -61,6 +62,7 @@ export class Home extends Component {
         <Services />
         <Resume />
         <Skillset />
+        <Contact />
       </>
     );
   }
