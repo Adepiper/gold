@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import freeLogo from '../images/freeLogo.jpg';
 
 export default function NavBar() {
   return (
     <div>
       <nav className='navbar navbar-expand-md navbar-dark bg-dark px-0'>
         <Link to='/' className='navbar-brand mx-3 font-weight-bold'>
-          <img src='' alt='' srcset='' />
+          <img src={freeLogo} alt='' />
         </Link>
 
         <button
@@ -17,9 +18,12 @@ export default function NavBar() {
           <span className='navbar-toggler-icon'></span>
         </button>
 
-        <div className='collapse navbar-collapse  px-4 py-3' id='myNavbar'>
+        <div
+          className='collapse navLinks navbar-collapse  px-4 py-3'
+          id='myNavbar'
+        >
           <ul className='navbar-nav ml-auto'>
-            <li className='nav-item active'>
+            <li className='nav-item'>
               <a href='#about' className='nav-link text-white'>
                 ABOUT
               </a>

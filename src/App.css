@@ -71,8 +71,26 @@
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
   border-bottom: 3px solid #db7806da !important ;
+}
+
+.navbar a img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#myNavbar li {
+  transition: 1s;
+}
+
+#myNavbar li:hover {
+  border-bottom: 2px solid #db7806da;
+}
+
+li:active {
+  color: #db7806da;
 }
 
 .services .narrow .heading {
@@ -254,7 +272,7 @@
 .contact .phonemail a {
   color: #db7806da;
   text-decoration: none;
-  transition: 0.3s;
+  transition: 1s;
   letter-spacing: 2px;
 }
 
@@ -266,6 +284,10 @@
 .contact .phonemail a i {
   padding: 10px 10px 0 10px;
   font-size: 30px;
+}
+
+button:focus {
+  outline: none;
 }
 
 .contact .socialMedia button {

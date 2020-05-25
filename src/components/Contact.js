@@ -6,7 +6,7 @@ export default function Contact() {
     <>
       <section className='contact' id='contact'>
         <h4>You like what you see?</h4>
-        <img src={freeLogo} alt='' srcset='' />
+        <img src={freeLogo} alt='' />
 
         <div className='phonemail'>
           <a href='tel:07084186146'>
