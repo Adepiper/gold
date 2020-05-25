@@ -11,7 +11,7 @@ export default function NavBar() {
         </Link>
 
         <button
-          className='navbar-toggler navbar-toggler-white'
+          className='navbar-toggler navbar-toggler-white mx-2'
           data-toggle='collapse'
           data-target='#myNavbar'
         >
