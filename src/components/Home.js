@@ -48,6 +48,7 @@ export class Home extends Component {
                 <img src={Gold} alt='' />
               </div>
               <div className='col-md-8 text-center'>
+                <h2>Oluwapelumi Gold</h2>
                 <p>
                   A goal oriented individual seeking to acquire knowledge and
                   experience in Renewable Energy and Data alongside improving

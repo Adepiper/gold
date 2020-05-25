@@ -3,7 +3,7 @@
   background-image: url('./images/top-view-of-desert-2265082.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
   color: #ffffff;
   background-position: center center;
   overflow-x: hidden;
@@ -40,10 +40,15 @@
   margin-top: 50px;
   box-shadow: 10px 20px 10px 10px rgba(0, 0, 0, 0.9);
 }
+.homePage .icons h2 {
+  color: #db7806da;
+  padding: 10px;
+  margin: 10px;
+}
 
 .homePage .icons p {
   margin: 10px;
-  padding: 30px;
+  padding: 10px;
   line-height: 2em;
   font-size: 24px;
   animation: pageLoad ease-in 3s;
@@ -57,12 +62,12 @@
 .homePage .icons a {
   border-radius: 5px;
   text-decoration: none;
-  padding: 10px !important;
+  padding: 10px;
   border: 1px solid #db7806da !important ;
   font-weight: bold;
   transition: 0.5s;
   color: white;
-  margin: 10px;
+  margin-bottom: 30px;
 }
 .homePage .icons a:hover {
   background-color: #db7806da !important;
@@ -210,6 +215,7 @@ li:active {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 #skillset::after {
@@ -234,6 +240,10 @@ li:active {
   border-radius: 25px;
 }
 
+.skillset h1 {
+  margin: 10px;
+}
+
 .skillset img {
   height: 150px;
   width: 150px;
@@ -250,12 +260,13 @@ li:active {
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  text-align: center;
 }
 
 .contact h4 {
   font-size: 23px;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 10px 20px;
   letter-spacing: 5px;
 }
 
@@ -310,6 +321,9 @@ button:focus {
 }
 
 @media (max-width: 600px) {
+  .homePage {
+    min-height: 120vh;
+  }
   .homePage .icons img {
     height: 200px;
     width: 200px;
@@ -318,13 +332,22 @@ button:focus {
   .services .narrow hr {
     width: 60%;
   }
-
   .resume .card-container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-@media (min-width: 750px) {
+@media (max-width: 800px) {
+  .resume .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .resume .card-container .cards {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 700px) {
   .homePage {
     position: relative;
   }
@@ -341,5 +364,11 @@ button:focus {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 350px) {
+  .homePage {
+    min-height: 150vh;
   }
 }
